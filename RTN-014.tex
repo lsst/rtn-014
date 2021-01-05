@@ -1,0 +1,73 @@
+\documentclass[DM,authoryear,toc]{lsstdoc}
+% lsstdoc documentation: https://lsst-texmf.lsst.io/lsstdoc.html
+\input{meta}
+
+% Package imports go here.
+
+% Local commands go here.
+
+%If you want glossaries
+%\input{aglossary.tex}
+%\makeglossaries
+
+\title{Lunar Complications in the Scheduling of Deep Drilling Fields}
+
+% Optional subtitle
+% \setDocSubtitle{A subtitle}
+
+\author{%
+Eric Neilsen
+}
+
+\setDocRef{RTN-014}
+\setDocUpstreamLocation{\url{https://github.com/lsst/rtn-014}}
+
+\date{\vcsDate}
+
+% Optional: name of the document's curator
+% \setDocCurator{The Curator of this Document}
+
+\setDocAbstract{%
+The cadence of measurements of objects in in Legacy Survey of Space and Time (LSST) Deep Drilling Fields (DDFs) does not match the observing cadence for all objects, because objects detected in one sequence of exposures may be too faint to be detected in others: even when fields are observed at an optimum time within each night, the limiting magnitude can vary by more than 2 magnitudes over a lunation.
+This note examines the effects of the variation in sky brightness due to the moon on the cadence of measurements of objects in Legacy Survey of Space and Time (LSST) Deep Drilling Fields (DDFs).
+Plots of the variation in limiting magnitude by night are shown for each DDF, and physical explanations for its major characteristics discussed.
+A few strategies for minimizing the impact are described, trade-offs highlighted, and a list of related questions on science requirements raised.
+}
+
+% Change history defined here.
+% Order: oldest first.
+% Fields: VERSION, DATE, DESCRIPTION, OWNER NAME.
+% See LPM-51 for version number policy.
+\setDocChangeRecord{%
+  \addtohist{1}{YYYY-MM-DD}{Unreleased.}{Eric Neilsen}
+}
+
+
+\begin{document}
+
+% Create the title page.
+\maketitle
+% Frequently for a technote we do not want a title page  uncomment this to remove the title page and changelog.
+% use \mkshorttitle to remove the extra pages
+
+% ADD CONTENT HERE
+% You can also use the \input command to include several content files.
+
+\appendix
+% Include all the relevant bib files.
+% https://lsst-texmf.lsst.io/lsstdoc.html#bibliographies
+\section{References} \label{sec:bib}
+\renewcommand{\refname}{} % Suppress default Bibliography section
+\bibliography{local,lsst,lsst-dm,refs_ads,refs,books}
+
+% Make sure lsst-texmf/bin/generateAcronyms.py is in your path
+\section{Acronyms} \label{sec:acronyms}
+\input{acronyms.tex}
+% If you want glossary uncomment below -- comment out the two lines above
+%\printglossaries
+
+
+
+
+
+\end{document}
