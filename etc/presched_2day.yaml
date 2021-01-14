@@ -1,0 +1,63 @@
+site_name: LSST
+sequences:
+ - field_name: COSMOS
+   label: COSMOS_g
+   mag_lim_band: g
+   mag_limit: 23.5
+   gap_mag_limit: 22
+   sequence_duration: 70 minute
+   max_gap: 6.5 day
+   min_gap: 5 day
+   canonical_gap: 2 day
+   season_gap: 29 day
+   bridge_gap: False
+   maintain_cadence_in_gap: True
+ - field_name: Elias S1
+   label: Elias_S1_g
+   mag_lim_band: g
+   mag_limit: 23.5
+   gap_mag_limit: 22
+   sequence_duration: 70 minute
+   max_gap: 6.5 day
+   min_gap: 5 day
+   canonical_gap: 2 day
+   season_gap: 29 day
+   bridge_gap: False
+   maintain_cadence_in_gap: True
+ - field_name: ECDFS
+   label: ECDFS_g
+   mag_lim_band: g
+   mag_limit: 23.5
+   gap_mag_limit: 22
+   sequence_duration: 70 minute
+   max_gap: 6.5 day
+   min_gap: 5 day
+   canonical_gap: 2 day
+   season_gap: 29 day
+   bridge_gap: False
+   maintain_cadence_in_gap: True
+ - field_name: XMM-LSS
+   label: XMM-LSS_g
+   mag_lim_band: g
+   mag_limit: 23.5
+   gap_mag_limit: 22
+   sequence_duration: 70 minute
+   max_gap: 6.5 day
+   min_gap: 5 day
+   canonical_gap: 2 day
+   season_gap: 29 day
+   bridge_gap: False
+   maintain_cadence_in_gap: True
+ - field_name: Euclid 1
+   label: Euclid_g
+   mag_lim_band: g
+   mag_limit: 23.5
+   gap_mag_limit: 22
+   sequence_duration: 140 minute
+   max_gap: 6.5 day
+   min_gap: 5 day
+   canonical_gap: 2 day
+   season_gap: 29 day
+   bridge_gap: False
+   maintain_cadence_in_gap: True
+ 
