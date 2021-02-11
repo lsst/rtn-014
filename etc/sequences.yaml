@@ -1,0 +1,58 @@
+fields:
+    Elias S1:
+        ra: 00h37m48s
+        dec: -44d00m00s
+    XMM-LSS:
+        ra: 02h22m50s
+        dec: -04d45m00s
+sequences:
+ - name: Elias_S1_rgi
+   note: "DD:ELIASS1"
+   ha_limits:
+      rise:
+        min: 0
+        max: 1.5
+      set:
+        min: 21.5
+        max: 24.0
+   exposures:
+    - band: r
+      field: Elias S1
+      nvis: 4
+      nexp: 1
+      exptime: 30
+    - band: g
+      field: Elias S1
+      nvis: 2
+      nexp: 1
+      exptime: 30
+    - band: i
+      field: Elias S1
+      nvis: 3
+      nexp: 1
+      exptime: 30
+ - name: XMM-LSS_rgi
+   note: "DD:XMM-LSS"
+   ha_limits:
+      rise:
+        min: 0
+        max: 1.5
+      set:
+        min: 21.5
+        max: 24.0
+   exposures:
+    - band: r
+      field: XMM-LSS
+      nvis: 3
+      nexp: 1
+      exptime: 30
+    - band: g
+      field: XMM-LSS
+      nvis: 2
+      nexp: 1
+      exptime: 30
+    - band: i
+      field: XMM-LSS
+      nvis: 4
+      nexp: 1
+      exptime: 30
